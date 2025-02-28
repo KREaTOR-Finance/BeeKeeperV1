@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/BeeKeeperV1/static/css/main.2a40999f.css",
+    "main.js": "/BeeKeeperV1/static/js/main.ea5c3cdb.js",
+    "static/js/453.c1567d4e.chunk.js": "/BeeKeeperV1/static/js/453.c1567d4e.chunk.js",
+    "index.html": "/BeeKeeperV1/index.html",
+    "main.2a40999f.css.map": "/BeeKeeperV1/static/css/main.2a40999f.css.map",
+    "main.ea5c3cdb.js.map": "/BeeKeeperV1/static/js/main.ea5c3cdb.js.map",
+    "453.c1567d4e.chunk.js.map": "/BeeKeeperV1/static/js/453.c1567d4e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a40999f.css",
+    "static/js/main.ea5c3cdb.js"
+  ]
+}

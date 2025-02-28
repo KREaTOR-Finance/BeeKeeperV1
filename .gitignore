@@ -1,0 +1,61 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Hardhat artifacts
+artifacts/
+cache/
+typechain/
+typechain-types/
+
+# Environment files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Deployment files with sensitive information
+scripts/deploy-secrets.js
+deployments/
+
+# Coverage directory used by tools like istanbul
+coverage/
+coverage.json
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Build directories
+dist/
+build/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local Netlify folder
+.netlify
+
+# Gas reporter
+gasReporterOutput.json
+
+# Tenderly
+.tenderly
+
+# Debugging
+debug/
+
+# Workspace files
+*.code-workspace 
