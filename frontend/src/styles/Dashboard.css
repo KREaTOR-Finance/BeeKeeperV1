@@ -1,0 +1,726 @@
+.dashboard {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  text-transform: uppercase;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  color: #666;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+/* Platform Stats Section */
+.platform-stats {
+  margin-bottom: 3rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, #87CEEB 0%, #5CACEE 100%);
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 2;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.stat-label {
+  color: #666;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+/* Quick Actions Section */
+.quick-actions {
+  margin-bottom: 3rem;
+}
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 1.5rem;
+}
+
+.action-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.action-card h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  text-transform: uppercase;
+}
+
+.action-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.action-option {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.option-image {
+  font-size: 2rem;
+  background-color: #87CEEB;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: white;
+}
+
+.option-details {
+  flex: 1;
+}
+
+.option-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.option-price {
+  color: #666;
+}
+
+.btn-action {
+  background-color: #FFD700;
+  color: #333;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.btn-action:hover {
+  background-color: #E6C200;
+}
+
+/* Bonding Info Section */
+.bonding-info {
+  margin-bottom: 3rem;
+}
+
+.info-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-card p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.formula {
+  font-family: 'Courier New', monospace;
+  background-color: #f5f5f5;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #E6C200;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.info-card h3 {
+  font-size: 1.2rem;
+  color: #FFD700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.info-card ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-card li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Connect Prompt */
+.connect-prompt {
+  background-color: white;
+  border-radius: 8px;
+  padding: 3rem 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.connect-prompt h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1rem;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.connect-prompt p {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+/* Social Media Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid #eee;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 15px;
+  border-radius: 50%;
+  background-color: #FFD700;
+  color: #333;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background-color: #E6C200;
+  transform: translateY(-3px);
+}
+
+/* How It Works Section */
+.how-it-works,
+.buy-bees {
+  margin-bottom: 3rem;
+}
+
+.info-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-card h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.info-card h3:first-child {
+  margin-top: 0;
+}
+
+.info-card p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.info-card ul,
+.info-card ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-card li {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Social Grid */
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.social-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-decoration: none;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.social-card i {
+  font-size: 2.5rem;
+  color: #FFD700;
+  margin-bottom: 1rem;
+}
+
+.social-card span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.social-card p {
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .stats-grid,
+  .actions-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .action-option {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .option-image {
+    margin-bottom: 1rem;
+  }
+  
+  .btn-action {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
+
+/* Queen Bee Colony Section */
+.queen-colony-highlight {
+  margin-bottom: 3rem;
+}
+
+.queen-crown {
+  font-size: 1.5rem;
+  vertical-align: middle;
+  margin: 0 0.5rem;
+  animation: float 3s ease-in-out infinite;
+  display: inline-block;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.info-card.royal {
+  background-color: #f8f5ff;
+  border: 2px solid #4b0082;
+  position: relative;
+  overflow: hidden;
+}
+
+.info-card.royal::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, rgba(75, 0, 130, 0.1) 0%, rgba(75, 0, 130, 0.02) 70%);
+  z-index: 1;
+}
+
+.royal-banner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(75, 0, 130, 0.2);
+}
+
+.royal-icon {
+  font-size: 3rem;
+  margin-right: 1.5rem;
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 5px rgba(255, 215, 0, 0.5); }
+  50% { text-shadow: 0 0 20px rgba(255, 215, 0, 0.8); }
+}
+
+.royal-banner h3 {
+  font-size: 1.5rem;
+  color: #4b0082;
+  margin: 0;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.royal-intro {
+  font-size: 1.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #4b0082;
+  font-weight: bold;
+}
+
+.royal-benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.benefit-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.benefit-content h4 {
+  font-size: 1rem;
+  color: #4b0082;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.benefit-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.royal-note {
+  background-color: rgba(255, 215, 0, 0.1);
+  border-left: 4px solid #ffd700;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.royal-note p {
+  margin: 0;
+  color: #856404;
+}
+
+/* Royal Exclusivity Section */
+.royal-exclusivity {
+  background-color: rgba(75, 0, 130, 0.05);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  text-align: center;
+}
+
+.exclusivity-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #ff6b6b;
+  color: white;
+  font-weight: bold;
+  padding: 0.3rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  transform: rotate(5deg);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.royal-exclusivity p {
+  margin-bottom: 1.2rem;
+  color: #4b0082;
+  font-weight: 500;
+}
+
+/* Live Counter */
+.live-counter {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0;
+  position: relative;
+  padding: 1rem;
+  background-color: rgba(75, 0, 130, 0.1);
+  border-radius: 8px;
+  border: 2px solid #4b0082;
+}
+
+.counter-label {
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #4b0082;
+  margin-bottom: 0.5rem;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  letter-spacing: 1px;
+}
+
+.counter-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4b0082;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  text-shadow: 0 0 10px rgba(75, 0, 130, 0.3);
+}
+
+.counter-pulse {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  background-color: #ff6b6b;
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 107, 107, 0.7);
+  }
+  
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(255, 107, 107, 0);
+  }
+  
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 107, 107, 0);
+  }
+}
+
+.progress-container {
+  margin-top: 1rem;
+}
+
+.progress-label {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+  color: #4b0082;
+  font-weight: bold;
+}
+
+.progress-bar {
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  border: 1px solid rgba(75, 0, 130, 0.2);
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4b0082, #9370db);
+  border-radius: 6px;
+  transition: width 1s ease;
+}
+
+.progress-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #4b0082;
+}
+
+.progress-stats span:first-child {
+  font-weight: bold;
+}
+
+/* Urgency Message */
+.urgency-message {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  background-color: rgba(255, 215, 0, 0.15);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #856404;
+  animation: fadeInOut 5s infinite;
+}
+
+.urgency-icon {
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+.btn-royal {
+  background-color: #4b0082;
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn-royal:hover {
+  background-color: #3a006b;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(75, 0, 130, 0.3);
+}
+
+@media (max-width: 768px) {
+  .stats-grid,
+  .actions-grid,
+  .royal-benefits {
+    grid-template-columns: 1fr;
+  }
+  
+  .royal-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .royal-icon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+  
+  .benefit-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .benefit-icon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+.code-snippet {
+  background-color: #f5f5f5;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+} 

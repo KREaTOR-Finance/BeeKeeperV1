@@ -1,0 +1,271 @@
+.stake {
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  text-align: center;
+}
+
+/* Stake Overview Section */
+.stake-overview {
+  margin-bottom: 40px;
+}
+
+.overview-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.overview-item {
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.item-label {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.item-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.item-value.highlight {
+  color: #4CAF50;
+}
+
+.btn-claim-rewards {
+  grid-column: 1 / -1;
+  background-color: #FFD700;
+  color: #333;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  text-transform: uppercase;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.btn-claim-rewards:hover:not(:disabled) {
+  background-color: #E6C200;
+}
+
+.btn-claim-rewards:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Stake Actions Section */
+.stake-actions {
+  margin-bottom: 40px;
+}
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.action-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.action-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  color: #666;
+  font-weight: bold;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.btn-max {
+  background-color: #87CEEB;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  font-size: 0.8rem;
+}
+
+.btn-max:hover {
+  background-color: #5CACEE;
+}
+
+.btn-stake, .btn-unstake {
+  width: 100%;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-stake {
+  background-color: #FFD700;
+  color: #333;
+}
+
+.btn-unstake {
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-stake:hover:not(:disabled) {
+  background-color: #E6C200;
+}
+
+.btn-unstake:hover:not(:disabled) {
+  background-color: #d32f2f;
+}
+
+.btn-stake:disabled, .btn-unstake:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Staking Info Section */
+.staking-info {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.info-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-card p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.highlight {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.note {
+  font-style: italic;
+  color: #666;
+  border-left: 3px solid #FFD700;
+  padding-left: 15px;
+}
+
+/* Connect Prompt */
+.connect-prompt {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.connect-prompt h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.connect-prompt p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .overview-card {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .actions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .overview-card {
+    grid-template-columns: 1fr;
+  }
+  
+  .input-group {
+    flex-direction: column;
+  }
+  
+  .input-group input {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .btn-max {
+    width: 100%;
+    border-radius: 4px;
+  }
+} 

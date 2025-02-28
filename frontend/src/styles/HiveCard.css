@@ -1,0 +1,221 @@
+.hive-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  border-top: 4px solid #ccc;
+}
+
+.hive-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Health status indicators */
+.hive-card.healthy {
+  border-top-color: #28a745;
+}
+
+.hive-card.good {
+  border-top-color: #17a2b8;
+}
+
+.hive-card.warning {
+  border-top-color: #ffc107;
+}
+
+.hive-card.critical {
+  border-top-color: #dc3545;
+  animation: pulse-warning 2s infinite;
+}
+
+@keyframes pulse-warning {
+  0% { box-shadow: 0 4px 8px rgba(220, 53, 69, 0.1); }
+  50% { box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3); }
+  100% { box-shadow: 0 4px 8px rgba(220, 53, 69, 0.1); }
+}
+
+.staked-badge {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background-color: #4b0082;
+  color: white;
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.hive-image {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.hive-name {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0.8rem;
+  color: #333;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.hive-details {
+  margin-top: 1rem;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.detail-label {
+  color: #666;
+  font-size: 0.7rem;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.detail-value {
+  font-weight: bold;
+  color: #333;
+  font-size: 0.7rem;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.production-rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.4rem;
+}
+
+.bee-icon, .huny-icon {
+  font-size: 1rem;
+  margin-right: 0.4rem;
+}
+
+.rate-value {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.health-bar-container {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 0.5rem 0;
+}
+
+.health-bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.hive-card.healthy .health-bar {
+  background-color: #28a745;
+}
+
+.hive-card.good .health-bar {
+  background-color: #17a2b8;
+}
+
+.hive-card.warning .health-bar {
+  background-color: #ffc107;
+}
+
+.hive-card.critical .health-bar {
+  background-color: #dc3545;
+}
+
+.decay-info, .staked-info {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.decay-label, .staked-label {
+  font-size: 0.7rem;
+  color: #666;
+  margin-bottom: 0.2rem;
+}
+
+.decay-value {
+  font-weight: bold;
+  color: #dc3545;
+  margin-bottom: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.decay-note {
+  font-size: 0.6rem;
+  color: #666;
+  font-style: italic;
+}
+
+.staked-label {
+  color: #28a745;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.huny-production {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.huny-value {
+  font-weight: bold;
+  color: #ffa500;
+}
+
+.btn-restore {
+  background-color: #17a2b8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.btn-restore:hover {
+  background-color: #138496;
+  transform: translateY(-2px);
+}
+
+.dead-hive-warning {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .hive-card {
+    padding: 1rem;
+  }
+  
+  .hive-image {
+    font-size: 2.5rem;
+  }
+} 

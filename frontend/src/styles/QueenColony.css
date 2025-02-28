@@ -1,0 +1,537 @@
+.queen-colony {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Queen Banner */
+.queen-banner {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, #8a2be2 0%, #4b0082 100%);
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+.queen-avatar {
+  font-size: 4rem;
+  margin-right: 2rem;
+  background: radial-gradient(circle, #ffd700 0%, #ffa500 100%);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+}
+
+.queen-info h2 {
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.queen-info p {
+  font-size: 1rem;
+  opacity: 0.9;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+/* Colony Benefits */
+.colony-benefits {
+  background-color: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #ffd700;
+}
+
+.colony-benefits h3 {
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  color: #4b0082;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem 0;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.benefit-icon {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  min-width: 30px;
+  text-align: center;
+}
+
+.royal-warning {
+  background-color: #fff3cd;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-left: 4px solid #ffc107;
+}
+
+.royal-warning p {
+  margin: 0;
+  color: #856404;
+  line-height: 1.5;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+/* Colony Stats */
+.colony-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(255, 215, 0, 0.2), transparent 70%);
+  z-index: 0;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 1;
+  color: #4b0082;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+  position: relative;
+  z-index: 1;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+/* Royal Hives Grid */
+.royal-hives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.royal-hive-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  border: 2px solid #ffd700;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.royal-hive-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.royal-insignia {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  font-size: 1.5rem;
+  background: #4b0082;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 2px solid #ffd700;
+}
+
+.hive-image {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.hive-name {
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #4b0082;
+}
+
+.hive-production {
+  margin-bottom: 1rem;
+}
+
+.production-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.4rem;
+}
+
+.production-icon {
+  font-size: 1rem;
+  margin-right: 0.4rem;
+}
+
+.production-value {
+  font-size: 0.7rem;
+  font-weight: bold;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.lock-period {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 0.8rem;
+  margin-top: 1rem;
+}
+
+.lock-label {
+  font-size: 0.8rem;
+  color: #666;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.lock-value {
+  font-weight: bold;
+  color: #4b0082;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+/* Available Hives for Staking */
+.section-description {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.available-hives-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.available-hive-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.available-hive-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.available-hive-card.selected {
+  border-color: #4b0082;
+  background-color: rgba(75, 0, 130, 0.05);
+}
+
+.selection-indicator {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.available-hive-card.selected .selection-indicator {
+  background-color: #4b0082;
+  border-color: #4b0082;
+}
+
+.decay-countdown {
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  padding: 0.6rem;
+  margin: 0.8rem 0;
+}
+
+.decay-label {
+  font-size: 0.7rem;
+  color: #666;
+  margin-bottom: 0.2rem;
+}
+
+.decay-value {
+  font-weight: bold;
+  color: #dc3545;
+  font-size: 0.8rem;
+}
+
+.comparison {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.current-state, .future-state {
+  text-align: center;
+  flex: 1;
+}
+
+.state-label {
+  font-size: 0.6rem;
+  color: #666;
+  margin-bottom: 0.3rem;
+}
+
+.current-state .state-value {
+  color: #dc3545;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.future-state .state-value {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: #666;
+  padding: 0 0.5rem;
+}
+
+/* Staking Actions */
+.staking-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+.selected-count {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #4b0082;
+}
+
+.btn-royal {
+  background: linear-gradient(135deg, #8a2be2 0%, #4b0082 100%);
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 4px;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-royal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(75, 0, 130, 0.3);
+}
+
+/* Staking Ceremony Overlay */
+.ceremony-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.ceremony-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.ceremony-content {
+  background: linear-gradient(135deg, #4b0082 0%, #2e0854 100%);
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 600px;
+  width: 90%;
+  text-align: center;
+  color: white;
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+  border: 3px solid #ffd700;
+}
+
+.ceremony-content h2 {
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  color: #ffd700;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.ceremony-animation {
+  margin-bottom: 2rem;
+}
+
+.queen-emoji {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+.ceremony-hives {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.ceremony-hive {
+  font-size: 2rem;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.ceremony-progress {
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #ffd700;
+  border-radius: 5px;
+  width: 0;
+  animation: progress 3s linear forwards;
+}
+
+@keyframes progress {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.ceremony-complete {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.royal-hives {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.royal-hive {
+  font-size: 2rem;
+  animation: glow 2s ease-in-out infinite;
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 5px rgba(255, 215, 0, 0.5); }
+  50% { text-shadow: 0 0 20px rgba(255, 215, 0, 0.8); }
+  100% { text-shadow: 0 0 5px rgba(255, 215, 0, 0.5); }
+}
+
+.royal-decree {
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  border-radius: 4px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .colony-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .staking-actions {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .queen-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .queen-avatar {
+    margin-right: 0;
+    margin-bottom: 1.5rem;
+  }
+} 

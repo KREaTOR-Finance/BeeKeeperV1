@@ -1,0 +1,422 @@
+.stats {
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #333;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #666;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+/* Stats Overview Section */
+.stats-overview {
+  margin-bottom: 40px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.stat-card {
+  background-color: #87CEEB;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 70%);
+  z-index: 1;
+}
+
+.stat-value {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5rem;
+  position: relative;
+  z-index: 2;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.stat-label {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 2;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+/* Charts Section */
+.charts-section {
+  margin-bottom: 40px;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 20px;
+}
+
+.chart-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-title {
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.chart-placeholder {
+  height: 250px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+
+.chart-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.chart-text {
+  font-size: 1.2rem;
+  color: #333;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+/* Detailed Stats Section */
+.detailed-stats {
+  margin-bottom: 40px;
+}
+
+.stats-table-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto;
+}
+
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.stats-table tr {
+  border-bottom: 1px solid #eee;
+}
+
+.stats-table tr:last-child {
+  border-bottom: none;
+}
+
+.stats-table td {
+  padding: 15px 10px;
+}
+
+.stat-name {
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+.stat-value-cell {
+  text-align: right;
+  font-weight: bold;
+  color: #4b0082;
+  padding: 10px;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+/* Links Section */
+.links-section {
+  margin-bottom: 40px;
+}
+
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.external-link {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.external-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.link-icon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.link-text {
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .links-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .links-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .stat-name, .stat-value-cell {
+    font-size: 0.9rem;
+  }
+}
+
+.stats-page {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-title {
+  margin-bottom: 2rem;
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  color: #333;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Stats Cards */
+.stats-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.stats-card h2, .stats-card h3 {
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.main-stats {
+  margin-bottom: 2rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1rem;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #4b0082;
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Charts */
+.stat-chart {
+  margin-bottom: 1.5rem;
+}
+
+.chart-placeholder {
+  height: 30px;
+  background-color: #f8f9fa;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.chart-segment {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.chart-segment.active {
+  background-color: #28a745;
+}
+
+.chart-segment.decaying {
+  background-color: #ffc107;
+  left: 80%;
+}
+
+.chart-segment.dead {
+  background-color: #dc3545;
+  left: 95%;
+}
+
+.chart-segment.staked {
+  background-color: #4b0082;
+}
+
+/* Stat Details */
+.stat-details {
+  margin-top: 1rem;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.stat-row:last-child {
+  border-bottom: none;
+}
+
+/* Info Cards */
+.info-card {
+  background-color: #f8f9fa;
+}
+
+.info-content {
+  line-height: 1.6;
+}
+
+.info-content p {
+  margin-bottom: 1rem;
+}
+
+.info-content ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-content li {
+  margin-bottom: 0.5rem;
+}
+
+/* Connect Prompt */
+.connect-prompt {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.connect-prompt h2 {
+  font-family: 'Press Start 2P', 'Courier New', monospace;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.connect-prompt p {
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-item {
+    padding: 0.8rem;
+  }
+  
+  .stat-value {
+    font-size: 1.5rem;
+  }
+} 
